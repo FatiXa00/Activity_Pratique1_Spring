@@ -9,6 +9,6 @@ public class presSpringAnnotations {
         ApplicationContext context=
                 new AnnotationConfigApplicationContext("dao","Metier"); // en specifiant les package qui va scanner
         IMetier metier=context.getBean(IMetier.class);
-        System.out.println(metier.calcul());
+        System.out.println("Resultat Annotations "+metier.calcul());
     }
 }

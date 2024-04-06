@@ -11,7 +11,7 @@ public class presSpringXml {
                 new ClassPathXmlApplicationContext("applicationContext.xml");
         IMetier metier=(IMetier) context
                 .getBean("metier");
-        System.out.println("Resultat=>"+metier.calcul());
+        System.out.println("Resultat Xml=>"+metier.calcul());
 
     }
 }

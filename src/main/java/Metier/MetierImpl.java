@@ -5,17 +5,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
-
 public class MetierImpl implements IMetier{
-
     //Couplage faible
-
-
     //Pour faire injection des dependances au moment de
     // l'instanciation de metierImpl cherche moi un objet de type IDao, si trouvee ==> injecter dans la variable dao
     @Autowired
     // on peut faire injection via controlleur mieux
-
     private IDao dao;
     public MetierImpl(IDao dao) {
         this.dao = dao;
